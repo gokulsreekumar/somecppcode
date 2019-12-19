@@ -7,6 +7,15 @@ D generic_min(T a, T b)
     return (a<b?a:b);
 }
 
+int calc(char op,int a,int b)
+{
+    if(op=='+') return a+b;
+    else if(op=='-') return a-b;
+    else if(op=='*') return a*b;
+    else if(op=='/') return a/b;
+    else return -99999;
+}
+
 int main()
 {
     int a,b,c;int temp;
@@ -18,7 +27,6 @@ int main()
         sum+=i*i;
         printf("%d\n",sum);
     }
-
 }
 
 
